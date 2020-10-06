@@ -285,11 +285,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4XD9PP3D9P;
 				INFOPLIST_FILE = "Whack-A-Mole/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.friscoisd.k12.Whack-A-Mole";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.friscoisd.k12.McKinzie-Whack-A-Mole";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -303,11 +304,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4XD9PP3D9P;
 				INFOPLIST_FILE = "Whack-A-Mole/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.friscoisd.k12.Whack-A-Mole";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.friscoisd.k12.McKinzie-Whack-A-Mole";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
