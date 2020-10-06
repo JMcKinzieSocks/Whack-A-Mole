@@ -11,6 +11,7 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBOutlet weak var scoreLabel: UILabel!
+    @IBOutlet weak var button: UIButton!
     
     
     override func viewDidLoad() {
@@ -21,6 +22,7 @@ class ViewController: UIViewController {
     @IBAction func buttonPressed(_ sender: Any) {
         scoreLabel.text = String((Int(scoreLabel.text ?? "0") ?? 0) + 1)
         print("It worked!")
+        button.isHidden = true
     }
     
 }

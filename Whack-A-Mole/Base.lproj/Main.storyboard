@@ -49,6 +49,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="button" destination="cdm-UP-RtU" id="Qsu-zi-777"/>
                         <outlet property="scoreLabel" destination="EMo-Y7-rHV" id="WER-ys-nUZ"/>
                     </connections>
                 </viewController>
