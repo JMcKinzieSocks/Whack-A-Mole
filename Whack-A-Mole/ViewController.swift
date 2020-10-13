@@ -21,7 +21,7 @@ class ViewController: UIViewController {
     var buttonHit: Bool = false
     var score: Int = 0
     var time: Int = 5
-    //var timer = Timer()
+    var timer = Timer()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,7 +33,7 @@ class ViewController: UIViewController {
     func initialize() {
         screenWidth = Int(screenSize.width)
         screenHeight = Int(screenSize.height)
-        //timer = Timer.scheduledTimer(timeInterval: Double(time), target: self, selector: #selector(updateButton), userInfo: nil, repeats: true)
+        timer = Timer.scheduledTimer(timeInterval: Double(time), target: self, selector: #selector(updateButton), userInfo: nil, repeats: true)
         firstButton.frame = CGRect(x: screenWidth / 2,y: screenHeight / 3, width: diameter, height: diameter)
         firstButton.backgroundColor = UIColor.brown
         firstButton.addTarget(self, action:#selector(buttonPressed(_:)), for: .touchUpInside)
@@ -43,9 +43,9 @@ class ViewController: UIViewController {
         buttonHit = true
         score += 1
         scoreLabel.text = String(score)
-        //timer.invalidate()
+        timer.invalidate()
         updateButton()
-        //timer = Timer.scheduledTimer(timeInterval: Double(time), target: self, selector: #selector(updateButton), userInfo: nil, repeats: true)
+        timer = Timer.scheduledTimer(timeInterval: Double(time), target: self, selector: #selector(updateButton), userInfo: nil, repeats: true)
     }
     
     @objc func updateButton() {
